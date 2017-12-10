@@ -1,11 +1,8 @@
 FROM php:cli
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-
 
 RUN docker-php-ext-install bcmath
 
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
 
-
-
-CMD [ "php", "./read.php" ]
+CMD [ "php", "./worker.php" ]
