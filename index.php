@@ -20,7 +20,7 @@ if(isset($_POST['msg'])){
 <html>
 <body>
 	<form method="post">
-		<input type="text" value="" name ="msg"/>
+		<input type="text" value="" name ="msg" autofocus />
 		<input type="submit" value="Enviar para fila" />
 	</form>
 <body>
